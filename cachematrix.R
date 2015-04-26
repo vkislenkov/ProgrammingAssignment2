@@ -1,8 +1,9 @@
-## Caching inverse of a matrix (potentially time-consuming).
+## Caching inverse of a matrix (potentially time-consuming
+## caluclation, so result is cached for repeat use).
 
 ## Creates a cache matrix object to store results of previous
-## calculations of inverse.
-
+## calculations of inverse. Object consists of 4 accessor functions
+## for the matrix and its inverse.
 makeCacheMatrix <- function(x = matrix()) {
 	m <- NULL
 	set <- function(y) {
